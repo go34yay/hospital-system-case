@@ -99,7 +99,6 @@ public class PatientService {
     public void registerPatient(Patient patient, Hospital hospital) {
         patient.getHospitals().add(hospital);
         hospital.getPatients().add(patient);
-        savePatient(patient);
     }
 
     /**

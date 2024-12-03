@@ -17,7 +17,7 @@ public class Hospital {
     private String address;
     private String phone;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "hospitals", cascade = CascadeType.ALL)
     private Set<Patient> patients = new HashSet<>();
 
     public Hospital(String name, String address, String phone) {

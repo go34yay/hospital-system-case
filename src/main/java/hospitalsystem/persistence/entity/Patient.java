@@ -23,7 +23,7 @@ public class Patient {
     private String sex;
     private String diagnosis;
 
-    @ManyToMany(mappedBy = "patients")
+    @ManyToMany
     private Set<Hospital> hospitals = new HashSet<>();
 
     public Patient(String firstName, String lastName, String address, String email, String phone, Date dateOfBirth, String sex, String diagnosis) {
